@@ -3,7 +3,7 @@
   "name": "com.berthtime/berthtime",
   "title": "BerthTime",
   "description": "Track ocean containers and shipments: live ETAs, delays, carrier events and share links.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "websiteUrl": "https://berthtime.com/ai-assistant",
   "repository": {
     "url": "https://github.com/berthtime/berthtime-mcp",
