@@ -25,9 +25,11 @@ This repository contains the public connection details, registry metadata and cl
 
 ## Tools
 
-**Read:** `list_companies`, `list_shipments`, `list_shared_shipments`, `get_shipment`, `get_shipment_events`, `arriving_soon`, `delayed_shipments`, `detect_reference`, `list_carriers`, `get_usage`, `list_notification_rules`, `list_tickets`.
+**Read:** `list_companies`, `list_shipments`, `list_shared_shipments`, `get_shipment`, `get_shipment_events`, `list_arriving_shipments`, `list_delayed_shipments`, `detect_reference`, `list_carriers`, `get_usage`, `list_alert_rules`, `list_support_requests`.
 
-**Write** (needs read-and-write access, chosen at sign-in, and an owner or admin role in the company; or a read + write API key): `track_shipment`, `refresh_shipment`, `get_share_link`, `create_share_link` (paid plans), `create_ticket`, `archive_shipment`.
+**Write** (needs read-and-write access, chosen at sign-in, and an owner or admin role in the company; or a read + write API key): `track_shipment`, `update_shipment_identifiers` (set the booking, bill of lading or container numbers on a shipment), `refresh_shipment`, `get_share_link` (creates a link if none exists; paid plans), `create_share_link` (paid plans), `create_support_request`, `archive_shipment`.
+
+Several tools were renamed on 6 November 2026; the old names (`arriving_soon`, `delayed_shipments`, `list_notification_rules`, `list_tickets`, `create_ticket`) still work.
 
 Every tool declares MCP annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`, `openWorldHint`). If you belong to several companies, pass the optional `company` argument (id, @handle or exact name).
 
