@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "berthtime": {
+      "type": "http",
+      "url": "https://berthtime.com/api/v1/mcp"
+    }
+  }
+}

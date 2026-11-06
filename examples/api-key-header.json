@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "berthtime": {
+      "url": "https://berthtime.com/api/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer ${BERTHTIME_API_KEY}"
+      }
+    }
+  }
+}

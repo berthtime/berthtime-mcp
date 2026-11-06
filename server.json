@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.berthtime/berthtime",
+  "title": "BerthTime",
+  "description": "Track ocean containers and shipments: live ETAs, delays, carrier events and share links.",
+  "version": "1.0.1",
+  "websiteUrl": "https://berthtime.com/ai-assistant",
+  "repository": {
+    "url": "https://github.com/berthtime/berthtime-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://berthtime.com/icon.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "src": "https://berthtime.com/brand/berthtime-icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://berthtime.com/api/v1/mcp"
+    }
+  ]
+}
